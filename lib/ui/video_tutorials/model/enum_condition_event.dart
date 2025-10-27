@@ -1,0 +1,4 @@
+enum ConditionEvent{
+  True,
+  False,
+}

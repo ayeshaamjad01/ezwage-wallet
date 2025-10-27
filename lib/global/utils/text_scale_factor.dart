@@ -1,0 +1,1 @@
+final double scaleFactor = 1.0;

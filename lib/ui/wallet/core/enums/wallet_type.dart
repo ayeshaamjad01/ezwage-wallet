@@ -1,0 +1,4 @@
+enum WalletType {
+  otherWallets,
+  bankWallets,
+}

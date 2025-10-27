@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "59063050662",
+    "project_id": "ezwage-ios",
+    "storage_bucket": "ezwage-ios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59063050662:android:1ea7a9110b039a2269af67",
+        "android_client_info": {
+          "package_name": "com.ezwage.employee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59063050662-iif8raqer33a13r9i3ga6nabuprdsoq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL_KmWPLsinnm0I_wdsKAHz5EZOZMbWT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59063050662-iif8raqer33a13r9i3ga6nabuprdsoq9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "59063050662-11o31otktc5nuq7rr1u26cucdjrq73c2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ezwage.employeeios",
+                "app_store_id": "1636626701"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

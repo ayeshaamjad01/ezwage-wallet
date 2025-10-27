@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+
+const roundbuttonColor = const Color(0xffDB1695);
+const checkedtextColor = const Color(0xffDB1695);
+const uncheckedtextColor = const Color(0xffC4C4C4);
+const simpletextColor = const Color(0xff000000);
+const blueColor = const Color(0xff00A2FF);
+const whiteColor = const Color(0xffFFFFFF);
+const greenColor = const Color(0xff71C341);
+const whitedimColor = const Color(0xffF9FDFF);
+const greyColor = const Color(0xff808080);
+const redColor = const Color(0xffFF6B6B);
+const diaColor = const Color(0xff030319);
+const bottomSheetContianerColor = Color(0xffF9FDFF);
+const lineColorsupportcheck = const Color(0xff005687);
+const lineColorsupportuncheck = const Color(0xff0497F1);
+const newblueColor = const Color(0xff00A2FF);
+const transicon = const Color(0xffF2FAFF);
+const backicon = const Color(0xffEC0B8D);
+const faqclr = const Color(0xff77B6FF);
+const supporttextclr = const Color(0xff4B545A);
+const drawertextclr = const Color(0xff151515);
+const datetextclr = const Color(0xff9F9F9F);
+const emailtextfieldclr = const Color(0xffF7F8F9);
+const emailtextfieldborderclr = const Color(0xffD5DAE0);
+const emaildiscriptionclr = const Color(0xff1E1E1E);
+const bankdialoguetextclr = const Color(0xff393F45);
+const faqinnerclr = const Color(0xffF0F8FF);
