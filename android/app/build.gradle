@@ -50,7 +50,7 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.ezwage.employee"
-        minSdkVersion 22
+        minSdkVersion flutter.minSdkVersion
         targetSdkVersion 35
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -74,7 +74,8 @@ android {
         }
     }
     namespace 'com.ezwage.employee'
-    ndkVersion = "25.0.8775105"
+    // ndkVersion = "25.0.8775105"
+    ndkVersion = "26.1.10909125"
 }
 
 flutter {
@@ -91,6 +92,11 @@ dependencies {
     // implementation 'com.google.android.gms:play-services-auth-api-phone:17.4.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
     implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation("com.squareup.retrofit2:retrofit:3.0.0")
+    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:5.1.0")
+    implementation("com.squareup.okhttp3:okhttp:5.1.0")
+    implementation("com.unikrew.faceoff:fingerprint-demo:0.8.15")
 }
 
 android.buildTypes.release.ndk.debugSymbolLevel = 'FULL'

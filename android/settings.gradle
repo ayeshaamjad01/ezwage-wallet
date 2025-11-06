@@ -13,6 +13,7 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
     }
 }
 
@@ -22,4 +23,30 @@ plugins {
     id "org.jetbrains.kotlin.android" version "2.1.0" apply false
 }
 
+def flutterSdkPath = {
+    def properties = new Properties()
+    file("local.properties").withInputStream { properties.load(it) }
+    return properties.getProperty("flutter.sdk")
+}()
+
+// 👇 Flutter's local Maven repo — REQUIRED for Flutter 3.35.x and Gradle 8+
+def flutterMavenRepo = "$flutterSdkPath/bin/cache/artifacts/engine"
+
+dependencyResolutionManagement {
+    //repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+        maven { url = uri("https://maven.google.com/") }
+        maven {
+            url = uri("https://unikrewmavenrepository-staging.azurewebsites.net")
+        }
+        maven { url = uri(flutterMavenRepo) }
+        maven { url = uri("https://storage.googleapis.com/download.flutter.io") }
+    }
+}
+
 include ":app"
+

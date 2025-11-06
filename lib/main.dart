@@ -54,7 +54,12 @@ Future<void> main() async {
   await AppStartupConfiguration.doConfigurations();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   await initDependencies();
-  await dotenv.load(fileName: ".env");
+  // await dotenv.load(fileName: ".env");
+  try {
+    await dotenv.load(fileName: "assets/.env");
+  } catch (e) {
+    debugPrint("⚠️ .env file missing. Using fallback configs.");
+  }
 
   FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
   // PlatformDispatcher.instance.onError = (error, stack) {
@@ -107,7 +112,6 @@ class _MyAppState extends State<MyApp> {
         ChangeNotifierProvider(create: (_) => WalletTransferProvider()),
         ChangeNotifierProvider(create: (_) => BankTransferProvider()),
         ChangeNotifierProvider(create: (_) => ContactsProvider()),
-
       ],
       child: Consumer<LocaleProvider>(
         builder: (context, provider, snapshot) {

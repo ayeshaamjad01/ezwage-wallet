@@ -163,7 +163,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - .env
+    - assets/.env
     - assets/images/
     - assets/Logo_Animation/
     - assets/Docs/
