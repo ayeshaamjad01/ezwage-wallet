@@ -223,7 +223,10 @@ class _WalletHomeContentState extends State<WalletHomeContent> {
               ),
               child: SingleChildScrollView(
                 child: Column(
-                  children: [const SendAgainWidget(), TransactionWidget()],
+                  children: [
+                    //const SendAgainWidget(), 
+                  
+                  TransactionWidget()],
                 ),
               ),
             ),

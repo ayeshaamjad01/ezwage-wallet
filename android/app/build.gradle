@@ -39,6 +39,12 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    repositories {
+    flatDir {
+        dirs 'libs'
+        }
+    }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -90,6 +96,8 @@ dependencies {
 //    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.20"
     // implementation 'com.google.android.gms:play-services-auth:17.0.0'
     // implementation 'com.google.android.gms:play-services-auth-api-phone:17.4.0'
+    implementation 'com.digitt.sdk:digitt-sdk:1.0.9'
+    implementation files('libs/digitt_sdk.aar')
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation("com.squareup.retrofit2:retrofit:3.0.0")
